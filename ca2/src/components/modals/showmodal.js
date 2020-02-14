@@ -19,19 +19,16 @@ function deleteShow(id, completed, show){
   console.log(id);
     axios.defaults.headers.common['Authorization'] = localStorage.getItem('jwtToken');
     console.log(show);
-    if(show.length > 0){
-      alert("Please delete the shows episodes before you delete this show")
-      return;
-    }
-    else{
+    
+   
       if(!window.confirm("Are you sure you want to delete this show?")){
         return;
       }
 
-      axios.delete(process.env.REACT_APP_BACKEND + `/shows/${show._id}`).then((d) => {
+      axios.delete(process.env.REACT_APP_BACKEND + `/shows/${id}`).then((d) => {
         console.log(id);
       });
-    }
+    
     window.location = '/shows';
     completed();
   };
