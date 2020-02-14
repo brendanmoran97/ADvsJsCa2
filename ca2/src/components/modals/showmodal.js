@@ -29,6 +29,7 @@ function deleteShow(id, completed, show){
       }
 
       axios.delete(process.env.REACT_APP_BACKEND + `/shows/${show._id}`).then((d) => {
+        console.log(id);
       });
     }
     window.location = '/shows';
