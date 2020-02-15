@@ -28,7 +28,7 @@
   color: #09d3ac;
 }
 body{
-  background-color: #DDE0FF ;
+  background-color: #F1F2F3 ;
   font-family: 'Roboto', sans-serif;
 }
 .mainLink
@@ -77,7 +77,7 @@ body{
 }
 
 .navbar{
-  background-color: #757473;
+  background-color: #66717E;
 }
 
 .images{
@@ -178,6 +178,12 @@ Button{
   color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+.cardFooter{
+  background-color: #E3E5E7;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .cardTitleShow{
   background-color: #6c757d;

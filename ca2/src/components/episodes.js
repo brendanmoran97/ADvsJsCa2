@@ -160,12 +160,12 @@ class Episode extends React.Component{
                           </Col>
                         </Row>
                       </Card.Body>
-                      <Card.Footer>
+                      <Card.Footer className="cardFooter">
                         <Row>
                           {(loggedIn) ? (
                             <>
                               <Col>
-                                <Link to = {`/episodes/update/${episode._id}`}><Button className = "space float-left">Edit Episode</Button></Link>
+                                <Link to = {`/episodes/update/${episode._id}`}><Button className = "space float-left" variant = "info">Edit Episode</Button></Link>
                               </Col>
                               <Col>
                                 <Button className = "float-right" variant = "danger" onClick = {() => this.deleteEpisode(episode._id)}>Delete Episode</Button>

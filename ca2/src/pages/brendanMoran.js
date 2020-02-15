@@ -19,7 +19,9 @@ class Brendan extends React.Component {
               <div className ="card-body">
                 <center>
                   <h3><img  alt="Icon" className = "icon" src= "../../../images/me.png"/> Brendan Moran</h3><br/>
-                  <p className ="brendanSpace"><img  alt="Icon" className = "icon" src= "../../../images/email.png"/><b> Contact Email: </b> N00163619@student.iadt.ie</p><hr/>
+                  <p className ="brendanSpace"><img  alt="Icon" className = "icon" src= "../../../images/email.png"/><b> Contact Email: </b>
+                  <a href="mailto:N00163619@iadt.ie?Subject=Your%20React%20App" className = "smallerOtherNav" target="_top">Click here to email me</a>
+                  </p><hr/>
                   <h3>Creative Computing DL836</h3>
                   <p className ="brendanSpace"><b>Module: </b> Advanced JavaScript</p><hr/>
                   <h3>

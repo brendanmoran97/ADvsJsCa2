@@ -102,20 +102,20 @@ import DropdownButton from 'react-bootstrap/DropdownButton'
                         </Card.Title>
                           <Card.Body>
                           <Col>
-                            <h5 className="topSpace"><b>IMDB ID:</b> {show.imdb_id}</h5>
+                            <h5 className="topSpace"><b>IMDB ID:</b> <a className = "smallerOtherNav" href = {`https://www.imdb.com/title/${show.imdb_id}`}>{show.imdb_id}</a> </h5>
                           </Col>
                           <Col className = "topSpace">
-                            <h5>It has {show.episode.length} episodes</h5>
+                            <h5>It has {show.episode.length} episodes and {show.review.length} reviews</h5>
                           </Col>
                           <Col className = "topSpace">
                             <h5><b>IMDB Rating: </b> {show.showRating}/5 <img alt = "All Episodes" src= "../../../images/star.png" height = "30px" width = "30px"/></h5>
                           </Col>
                           </Card.Body>
-                          <Card.Footer>
+                          <Card.Footer className = "cardFooter">
                             <Row>
                               {(loggedIn) ? (
                                 <Col>
-                                  <Link to={`/shows/update/${show._id}`}><Button className="space float-left">Edit Show</Button></Link>
+                                  <Link to={`/shows/update/${show._id}`}><Button className="space float-left" variant = "info">Edit Show</Button></Link>
                                 </Col>
                               ) : (
                                 <>

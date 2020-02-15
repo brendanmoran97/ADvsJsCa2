@@ -27,12 +27,11 @@ function deleteShow(id, completed, show){
       if(!window.confirm("Are you sure you want to delete this show?")){
         return;
       }
-
+      console.log(id)
       axios.delete(process.env.REACT_APP_BACKEND + `/shows/${id}`).then((d) => {
       });
     }
     window.location = '/shows';
-    completed();
   };
 
 function episodeStuff(e){
@@ -51,7 +50,7 @@ function episodeStuff(e){
    return (
 
      <>
-       <Button className = "float-right" onClick={() => setLgShow(true)}>View This Show</Button>
+       <Button className = "float-right" onClick={() => setLgShow(true)} variant = "outline-info">View This Show</Button>
 
        <Modal
          size="lg"
@@ -74,7 +73,7 @@ function episodeStuff(e){
                  </Col>
                  <Col>
                    <center>
-                     <Link to = {`/shows/review/${props.data._id}`}><Button className = "addEpisode" type = "submit" variant = "warning">Add Review</Button></Link>
+                     <Link to = {`/shows/review/${props.data._id}`}><Button className = "addEpisode" type = "submit" variant = "outline-info">Add Review</Button></Link>
                    </center>
                  </Col>
                  </>
