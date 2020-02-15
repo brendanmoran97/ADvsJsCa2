@@ -15,7 +15,7 @@ import {Link} from 'react-router-dom';
 
 
 
-unction deleteShow(id, completed, show){
+function deleteShow(id, completed, show){
   console.log(id);
     axios.defaults.headers.common['Authorization'] = localStorage.getItem('jwtToken');
     console.log(show);
