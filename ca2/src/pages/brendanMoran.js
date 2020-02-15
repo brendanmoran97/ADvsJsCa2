@@ -25,10 +25,10 @@ class Brendan extends React.Component {
                   <h3>Creative Computing DL836</h3>
                   <p className ="brendanSpace"><b>Module: </b> Advanced JavaScript</p><hr/>
                   <h3>
-                    <a className="linkStyle" href="https://github.com/brendanmoran97/ADvsJsCa2">GitHub</a>
+                    <a className="linkStyle" href="https://github.com/brendanmoran97/ADvsJsCa2">GitHub
                     <br/>
                     <br/>
-                    <img alt="Icon"  className = "iconbigger" src= "../../../images/code.png"/>
+                    <img alt="Icon"  className = "iconbigger" src= "../../../images/code.png"/></a>
                   </h3>
                 </center>
               </div>
