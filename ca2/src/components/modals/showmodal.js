@@ -15,22 +15,23 @@ import {Link} from 'react-router-dom';
 
 
 
-function deleteShow(id, completed, show){
+unction deleteShow(id, completed, show){
   console.log(id);
     axios.defaults.headers.common['Authorization'] = localStorage.getItem('jwtToken');
     console.log(show);
-    
-   
+    if(show.length > 0){
+      alert("Please delete the shows episodes before you delete this show")
+      return;
+    }
+    else{
       if(!window.confirm("Are you sure you want to delete this show?")){
         return;
       }
-
+      console.log(id)
       axios.delete(process.env.REACT_APP_BACKEND + `/shows/${id}`).then((d) => {
-        console.log(id);
       });
-    
+    }
     window.location = '/shows';
-    completed();
   };
 
 function episodeStuff(e){
